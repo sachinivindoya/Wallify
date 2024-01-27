@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Text } from 'react-native';
 
 class FavoritesTab extends Component{
     state = {}
