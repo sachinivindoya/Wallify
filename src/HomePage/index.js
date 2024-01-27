@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { Container, Header, Tab, Tabs, TabHeading, Left, Body, Right, Text, Title, Button, Icon, Input, Item } from 'native-base';
-// import ExploreTab from './ExploreTab'
-// import FavoritesTab from './FavoritesTab'
+ import ExploreTab from './ExploreTab'
+ import FavoritesTab from './FavoritesTab'
 class HomePage extends Component{
 
 
