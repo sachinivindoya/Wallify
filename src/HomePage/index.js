@@ -1,3 +1,8 @@
+/** copyRight */ 
+/* sachini Vinodya */
+/* 2024 */
+
+
 import { View, ActivityIndicator } from "react-native";
 import React, { Component } from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Left, Body, Right, Text, Title, Button, Icon, Input, Item } from 'native-base';
