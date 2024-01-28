@@ -2,13 +2,13 @@
 /* sachini Vinodya */
 /* 2024 */
 
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 import { View, ActivityIndicator } from "react-native";
 import React, { Component } from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Left, Body, Right, Text, Title, Button, Icon, Input, Item } from 'native-base';
-import CommunityTab from './CommunityTab'
-import ExploreTab from './ExploreTab'
-import FavoritesTab from './FavoritesTab'
+import ExploreTab from './Explore'
+import FavoritesTab from './Favourite'
 class HomePage extends Component {
 
 
@@ -91,10 +91,6 @@ class HomePage extends Component {
 
                 </Header>
                 <Tabs >
-
-                    <Tab heading={<TabHeading><Text>Community</Text></TabHeading>}>
-                        <CommunityTab query={this.state.query} />
-                    </Tab>
                     <Tab heading={<TabHeading>
                         <Text>Explore</Text>
                         {this.state.isExploreLoading && <ActivityIndicator size='small' />}
