@@ -1,12 +1,18 @@
 import { Component } from "react";
-import { Text } from 'react-native';
+import { Text, FlatList, View } from 'react-native';
 
 class ExploreTab extends Component{
     state = {}
 
     render () {
          return (
-             <Text> Explore Tab </Text>
+                <View style={StyleSheet.MainContainer}>
+                    <FlatList
+                    data={this.state.images}
+                    renderItem={this.renderRow}
+                    numColumns={2}
+                    ></FlatList>
+                </View>
           );
    }
     
